@@ -34,7 +34,7 @@ while True:
     elif i==1:               #When output from motion sensor is HIGH
         print "Intruder detected",i
 
-#CAMAERA
+#CAMERA
         camera.capture(date_string+".jpg")
         recording = datetime.now().strftime(date_string+".h264")
         camera.start_recording(recording)
